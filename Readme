@@ -1,8 +1,15 @@
-
+Info
+Scaricare Docker Desktop da: 
+    https://www.docker.com/products/docker-desktop/
+Installare il client e successivamente scaricare la seguente repo in una cartella a scelta:
+    https://github.com/GioeleLaugelli/KPIDockerDesktop
+Avviare Docker Desktop
 Aprire CMD e modificare i seguenti setting:
     wsl -d docker-desktop
     sysctl -w vm.max_map_count=262144
-dopodichè andare nella folder dove è presente il docker-compose e lanciare il seguente comando:
+Andare nella folder dove è presente il docker-compose e lanciare il seguente comando:
     docker compose up
 Le utenze possono essere trovate nel file .env
 Per l'utenza di Jenkins verrà promptata una password in fase di installazione
+
+N.B. ogni volta che si riavvia il pc/DockerDesktop andrà rieseguito il comando per l'utilizzo della memoria, altrimenti Elastic e Kibana daranno errori in fase di avvio
