@@ -140,24 +140,24 @@ services:
 #      timeout: 10s
 #      retries: 120
 
-  jenkins:
-    depends_on:
-      elastic:
-        condition: service_healthy
-    image: jenkins/jenkins:lts
-    volumes:
-      - jenk:/var/jenkins_home
-      - jenk:/var/run/docker.sock
-    privileged: true
-    user: root
-    ports:
-      - 8080:8080
-      - 50000:50000
+#  jenkins:
+#    depends_on:
+#      elastic:
+#        condition: service_healthy
+#    image: jenkins/jenkins:lts
+#    volumes:
+#      - jenk:/var/jenkins_home
+#      - jenk:/var/run/docker.sock
+#    privileged: true
+#    user: root
+#    ports:
+#      - 8080:8080
+#      - 50000:50000
   
 
 volumes:
-  jenk:
-    driver: local
+#  jenk:
+#    driver: local
   certs:
     driver: local
   elasticdata:
