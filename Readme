@@ -10,6 +10,5 @@ Aprire CMD e modificare i seguenti setting:
 Andare nella folder dove è presente il docker-compose e lanciare il seguente comando:
     docker compose up
 Le utenze possono essere trovate nel file .env
-Per l'utenza di Jenkins verrà promptata una password in fase di installazione
 
 N.B. ogni volta che si riavvia il pc/DockerDesktop andrà rieseguito il comando per l'utilizzo della memoria, altrimenti Elastic e Kibana daranno errori in fase di avvio
